@@ -4,6 +4,7 @@ const Employee = require('../models/employeeModel');
 const mongoose = require('mongoose'); 
 const {getAllEmployees,getEmployeeById,registerEmployee,editEmployee,deleteEmployee,getEmployeeByUserId} = require('../controllers/employeeController');
 const {getUserByUsernameAndPassword,addUser,getAllUsers} = require('../controllers/userController');
+const { defaultArgs } = require('puppeteer');
 
 describe('getUserByUsernameAndPassword', () => {
 
@@ -825,4 +826,3 @@ describe('getEmployeeByUserIdController', () => {
 
 
 });
-
